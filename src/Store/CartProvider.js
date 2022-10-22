@@ -5,10 +5,10 @@ import CartContext from './cart-context'
 
 const CartProvider = (props) => {
     const [items, updateItems] = useState([]);
+    
     const addItemToCartHandler = (item) => {
         updateItems([...items, item])
-        console.log('add item cart handler',cartContext)
-     
+        console.log('add item cart handler',cartContext) 
   };
 
     const removeItemFromCartHandler = (id) =>{}
